@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Altair</title>
+</head>
+<body class="light" id="body">
+    <main class="app">
+
+        <section class="greeting">
+            <h2 class="title">
+               A jenda
+            </h2>
+            <div class="dark-slider">
+                <label class="switch" id="dark">
+                    <input type="checkbox" id="noturno">
+                    <span class="slider round"></span>
+                </label><span id="text-slider">Modo Noturno</span>
+            </div>
+        </section>
+        <section class="create-todo">
+            <h3>Criar To-do</h3>
+
+            <form id="new-todo-form">
+                <h4>Quais são suas tarefas?</h4>
+                <input type="text" name="content" id="content" placeholder="ex. Fazer café">
+                <h4>Escolha uma categoria</h4>
+                <div class="options">
+                    <label class="option-trabalho">
+                        <input type="radio" name="categoria" id="categoria1" value="trabalho">
+                        <span class="bubble trabalho"></span>
+                        <div>Trabalho</div>
+                    </label>
+
+                    <label class="option-pessoal">
+                        <input type="radio" name="categoria" id="categoria2" value="pessoal">
+                        <span class="bubble pessoal"></span>
+                        <div>Pessoal</div>
+                    </label>
+
+
+                </div>
+
+                <input type="submit" value="Adicionar To-Do">
+            </form>
+
+            <section class="todo-list">
+                <h3>Lista To-do</h3>
+                <div class="list" id="todo-list">
+                    <!-- <div class="todo-item">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="bubble trabalho"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" value="Estudar unidade IV" readonly />
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Editar</button>
+                            <button class="delete">Apagar</button>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>

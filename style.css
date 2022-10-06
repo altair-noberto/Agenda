@@ -313,6 +313,7 @@ input:checked ~ .bubble::after {
 
 .todo-item .todo-content{
     flex: 1 1 0%;
+    width: 90vw;
 }
 
 .todo-item .todo-content input{
